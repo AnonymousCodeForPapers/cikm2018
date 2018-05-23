@@ -137,6 +137,9 @@ def print_top_words(weights, vocab, dataset, n_top_words=10):
 
     logging.info('---------------Printing the Topics------------------')
     topics = []
+    if not os.path.exists('topics/'):
+        os.makedirs('topics/')
+    
     with open('topics/topics_' + dataset + '.txt', 'a') as writer:
         for i in range(len(weights)):
             topic = (" ".join([vocab[j] for j in weights[i].argsort()[:-n_top_words - 1:-1]]))

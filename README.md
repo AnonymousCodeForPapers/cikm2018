@@ -10,5 +10,5 @@
 * After pretraining, set the mode as 2 to finetune the model
 
 ## Remarks
-* The checkpoint files generated from pretraining have been provided
+* The checkpoint files generated from pretraining process have been provided
 * The log files recording the experiment results of the model are also given

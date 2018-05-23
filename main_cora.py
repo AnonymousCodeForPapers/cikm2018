@@ -15,7 +15,7 @@ flags.DEFINE_float('init_lr_pretrain', 0.01, 'initial learning rate for pre-trai
 flags.DEFINE_float('init_lr_train', 0.001, 'initial learning rate for training')
 flags.DEFINE_float('lr_decay', 0.1, 'learning rate decay rate')
 flags.DEFINE_float('lambda_w', 1e-4, 'lambda for the regularizer of W')
-flags.DEFINE_string('noise', 'mask-0.3', "[None, 'gaussian', 'mask']")
+flags.DEFINE_string('noise', 'None', "[None, 'gaussian', 'mask']")
 flags.DEFINE_integer('hidden_dim', 50, 'dimension of embedding layer')
 flags.DEFINE_integer('top_k', 10, 'top k words')
 flags.DEFINE_string('pretrain_layers_list', '[200, 100]', 'pretrain layers of model')  # will also be used in training

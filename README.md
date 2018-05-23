@@ -1,7 +1,7 @@
 # cikm2018
 
 ## Prerequisities
-* Python version: 2.7.12
+* Python version: 2.7
 * Tensorflow version: 1.4.1
 
 ## How to run
